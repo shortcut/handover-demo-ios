@@ -47,6 +47,32 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
     }
 
+    func scene(_ scene: UIScene, continue userActivity: NSUserActivity) {
+        print("Will continue activity '\(userActivity.title ?? " with no title")'")
+        guard let activity = UserActivity(nsUserActivity: userActivity) else {
+            return
+        }
+        guard let navigationController = window?.rootViewController as? UINavigationController else {
+            return
+        }
+        switch activity {
+        case .seasonList:
+            navigationController.popViewController(animated: false)
+        case .season(let number):
+            navigationController.popViewController(animated: false)
+            let seasonsList = navigationController.viewControllers.first as! SeasonsViewController
+            seasonsList.showSeason(SeinfeldSeason(rawValue: number)!, animated: false)
+        case .episode(let season, let number):
+            navigationController.popViewController(animated: false)
+            let seasonsList = navigationController.viewControllers.first as! SeasonsViewController
+            let season = SeinfeldSeason(rawValue: season)!
+            seasonsList.showSeason(season, animated: false)
+            let episode = season.episodes[number - 1]
+            let episodeVC = EpisodeViewController.createFromStoryboard(withEpisode: episode)
+            navigationController.pushViewController(episodeVC, animated: false)
+        }
+    }
+
 
 }
 

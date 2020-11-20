@@ -9,21 +9,32 @@
 /* Begin PBXBuildFile section */
 		09F07BFF2566A67600CD91E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F07BFE2566A67600CD91E6 /* AppDelegate.swift */; };
 		09F07C012566A67600CD91E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F07C002566A67600CD91E6 /* SceneDelegate.swift */; };
-		09F07C032566A67600CD91E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F07C022566A67600CD91E6 /* ViewController.swift */; };
+		09F07C032566A67600CD91E6 /* SeasonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F07C022566A67600CD91E6 /* SeasonsViewController.swift */; };
 		09F07C062566A67600CD91E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09F07C042566A67600CD91E6 /* Main.storyboard */; };
 		09F07C082566A67800CD91E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09F07C072566A67800CD91E6 /* Assets.xcassets */; };
 		09F07C0B2566A67800CD91E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09F07C092566A67800CD91E6 /* LaunchScreen.storyboard */; };
+		09F07C142566A83000CD91E6 /* SeinfeldSeason.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F07C132566A83000CD91E6 /* SeinfeldSeason.swift */; };
+		09F07C172566A93F00CD91E6 /* SeasonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F07C162566A93F00CD91E6 /* SeasonViewController.swift */; };
+		09F07C202566AB5B00CD91E6 /* Episode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09F07C1F2566AB5B00CD91E6 /* Episode.storyboard */; };
+		09F07C232566AB6600CD91E6 /* EpisodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F07C222566AB6600CD91E6 /* EpisodeViewController.swift */; };
+		09F07C2C2566B59800CD91E6 /* UserActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F07C2B2566B59800CD91E6 /* UserActivity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		09F07BFB2566A67600CD91E6 /* Handover-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Handover-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		09F07BFE2566A67600CD91E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09F07C002566A67600CD91E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		09F07C022566A67600CD91E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		09F07C022566A67600CD91E6 /* SeasonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsViewController.swift; sourceTree = "<group>"; };
 		09F07C052566A67600CD91E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		09F07C072566A67800CD91E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09F07C0A2566A67800CD91E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09F07C0C2566A67800CD91E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09F07C132566A83000CD91E6 /* SeinfeldSeason.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeinfeldSeason.swift; sourceTree = "<group>"; };
+		09F07C162566A93F00CD91E6 /* SeasonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonViewController.swift; sourceTree = "<group>"; };
+		09F07C1A2566A9B500CD91E6 /* Handover-demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Handover-demo.entitlements"; sourceTree = "<group>"; };
+		09F07C1F2566AB5B00CD91E6 /* Episode.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Episode.storyboard; sourceTree = "<group>"; };
+		09F07C222566AB6600CD91E6 /* EpisodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeViewController.swift; sourceTree = "<group>"; };
+		09F07C2B2566B59800CD91E6 /* UserActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserActivity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +67,45 @@
 		09F07BFD2566A67600CD91E6 /* Handover-demo */ = {
 			isa = PBXGroup;
 			children = (
+				09F07C1A2566A9B500CD91E6 /* Handover-demo.entitlements */,
 				09F07BFE2566A67600CD91E6 /* AppDelegate.swift */,
 				09F07C002566A67600CD91E6 /* SceneDelegate.swift */,
-				09F07C022566A67600CD91E6 /* ViewController.swift */,
+				09F07C2B2566B59800CD91E6 /* UserActivity.swift */,
 				09F07C042566A67600CD91E6 /* Main.storyboard */,
+				09F07C1E2566AB5000CD91E6 /* ViewControllers */,
+				09F07C1C2566AB4700CD91E6 /* Models */,
 				09F07C072566A67800CD91E6 /* Assets.xcassets */,
 				09F07C092566A67800CD91E6 /* LaunchScreen.storyboard */,
 				09F07C0C2566A67800CD91E6 /* Info.plist */,
 			);
 			path = "Handover-demo";
+			sourceTree = "<group>";
+		};
+		09F07C1C2566AB4700CD91E6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				09F07C132566A83000CD91E6 /* SeinfeldSeason.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		09F07C1E2566AB5000CD91E6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				09F07C022566A67600CD91E6 /* SeasonsViewController.swift */,
+				09F07C162566A93F00CD91E6 /* SeasonViewController.swift */,
+				09F07C252566AB6B00CD91E6 /* Episode */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		09F07C252566AB6B00CD91E6 /* Episode */ = {
+			isa = PBXGroup;
+			children = (
+				09F07C1F2566AB5B00CD91E6 /* Episode.storyboard */,
+				09F07C222566AB6600CD91E6 /* EpisodeViewController.swift */,
+			);
+			path = Episode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +167,7 @@
 			files = (
 				09F07C0B2566A67800CD91E6 /* LaunchScreen.storyboard in Resources */,
 				09F07C082566A67800CD91E6 /* Assets.xcassets in Resources */,
+				09F07C202566AB5B00CD91E6 /* Episode.storyboard in Resources */,
 				09F07C062566A67600CD91E6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,9 +179,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09F07C032566A67600CD91E6 /* ViewController.swift in Sources */,
+				09F07C172566A93F00CD91E6 /* SeasonViewController.swift in Sources */,
+				09F07C032566A67600CD91E6 /* SeasonsViewController.swift in Sources */,
 				09F07BFF2566A67600CD91E6 /* AppDelegate.swift in Sources */,
+				09F07C142566A83000CD91E6 /* SeinfeldSeason.swift in Sources */,
+				09F07C232566AB6600CD91E6 /* EpisodeViewController.swift in Sources */,
 				09F07C012566A67600CD91E6 /* SceneDelegate.swift in Sources */,
+				09F07C2C2566B59800CD91E6 /* UserActivity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +332,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Handover-demo/Handover-demo.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DLFLF8ZQDD;
 				INFOPLIST_FILE = "Handover-demo/Info.plist";
@@ -295,8 +342,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "no.shortcut.Handover-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Debug;
 		};
@@ -305,6 +354,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Handover-demo/Handover-demo.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DLFLF8ZQDD;
 				INFOPLIST_FILE = "Handover-demo/Info.plist";
@@ -314,8 +364,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "no.shortcut.Handover-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Release;
 		};
