@@ -19,7 +19,7 @@ class EpisodeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureUI()
+        configureHeader()
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -32,7 +32,7 @@ class EpisodeViewController: UIViewController {
         userActivity?.invalidate()
     }
 
-    func configureUI() {
+    func configureHeader() {
         title = episode.name
         seasonAndEpisodeLabel.text = "Season \(episode.season) - Episode \(episode.numberInSeason) - Total episode \(episode.totalNumber)"
         writersLabel.text = "Writers: \(episode.writersText)"

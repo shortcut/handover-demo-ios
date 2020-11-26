@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 enum SeinfeldSeason: Int, CaseIterable {
     case first = 1, second, third, fourth, sixth, sventh, eight, nine
@@ -50,6 +51,13 @@ struct Episode: Hashable {
     var writers: [String]
     var originalAirDate: Date
     var description: String?
+    var image: UIImage? {
+        let webName = self.name.replacingOccurrences(of: " ", with: "_")
+        guard let image = UIImage(named: webName) else {
+            return nil
+        }
+        return image
+    }
     var originalAirDateText: String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .medium
